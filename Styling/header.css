@@ -1,0 +1,56 @@
+/* ============================================================
+   header.css  –  SmartParking navigatiebalk
+   Importeer dit op elke pagina (na main.css)
+   ============================================================ */
+
+nav {
+  position: relative; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+  background: var(--blue);
+  padding: 0 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+/* Logo container links */
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+}
+
+/* Placeholder – vervang met <img src="images/logo.png" width="44" height="44"> */
+.nav-logo-img {
+  width: 44px; height: 44px;
+  background: var(--dark);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 9px; font-weight: 700;
+  text-align: center; line-height: 1.2;
+  padding: 4px;
+}
+
+.nav-actions {
+  display: flex; align-items: center; gap: 18px;
+}
+
+.nav-icon-btn {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 2px;
+  background: none; border: none; cursor: pointer;
+  color: #fff;
+  font-size: 10px; font-weight: 600; letter-spacing: .04em;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+
+.nav-icon-btn:hover { opacity: .75; }
+
+.nav-icon-btn svg {
+  width: 26px; height: 26px;
+  stroke: #fff; fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.nav-icon-btn img {
+  width: 26px; height: 26px;
+}
